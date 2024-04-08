@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    background-color: #f4f7f6; /* Color de fondo suave */
+    color: #333; /* Color de texto principal */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    min-height: 100vh; /* Altura completa de la ventana */
+  }
+  
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    width: 60%; /* Ancho fijo para mejor control */
+    padding: 2rem; /* Espacio interno */
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .form {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 600px; /* Máximo ancho para el formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre elementos del formulario */
+  }
+  
+  .spacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem; /* Espacio entre elementos en la misma fila */
+    margin-top: 2rem;
+  }
+  
+  .curp {
+    color: #4CAF50; /* Verde más suave */
+  }
+  
+  .error {
+    color: #E53935; /* Rojo más intenso */
+  }
+  
+  @media (max-width: 768px) {
+    .form {
+      min-width: auto; /* Ajuste para que sea responsive */
+      padding: 20px;
+    }
+  
+    .container2 {
+      width: 90%; /* Más ancho en dispositivos pequeños */
+    }
+  }
+  
